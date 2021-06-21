@@ -1,0 +1,29 @@
+--> Typescript is extended JS.
+--> TS add type support to JS as a result code is less error prone.
+--> Ability to refactor code eaisy.
+--> Main programming lang of angular.
+--> TS file is saved as .ts extension.
+
+
+
+<!-- First proram notes -->
+
+//First code if we write hello word and console it using
+//log and compile it using tsc main.ts
+//command will create a file main.js which contain transpiled code.
+
+
+
+//go in self created JS program.
+
+ // As soon as we do tsc main.ts, firslty js file is created and our main.js file start giving an error.
+
+// it will point error on message variable.
+
+// This error happen bcz file is treated as script rather than module,module has its own scope and script shares global scope.
+
+//to overcome this error we need to use export stateement at top, by using this export as module insted of script.
+
+//so use export{} rest will autocomplete after we compoile the code using tsc main.ts
+
+// to make ts compiler automaticallly watch when evr there is change in code run tsc main --watch
